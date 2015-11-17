@@ -17,7 +17,7 @@
 <div class="container">
  <div class="row">
   <div col-md-12>
-  <table class="table table-hover">
+  <table class="table table-hover" id="student-table">
    <thead>
     <tr>
      <td>First Name</td>
@@ -27,25 +27,25 @@
    </thead>
 
    <tbody>
-    <tr>
+    <tr class="table-row">
      <td>Mick</td>
      <td>Fleetwood</td>
      <td>mfleetwood@gmail.com</td>
-     <td><button>X</button></td>
+     <td><input type="button" value="X" class="deleteBtn" /></td>
     </tr>
 
-    <tr>
+    <tr class="table-row">
      <td>Stevie</td>
      <td>Nicks</td>
      <td>snicks@gmail.com</td>
-     <td><button>X</button></td>
+     <td><input type="button" value="X" class="deleteBtn" /></td>
     </tr>
 
-    <tr>
+    <tr class="table-row">
      <td>Christine</td>
      <td>McVie</td>
      <td>cmcvie@gmail.com</td>
-     <td><button>X</button></td>
+     <td><input type="button" value="X" class="deleteBtn" /></td>
     </tr>
     
     <tr>
@@ -60,12 +60,13 @@
       <input type="text" class="form-control" id="last-name" placeholder="Type last name here">
       </div>
      </td>
+
      <td>
       <div class="form-group">
       <input type="text" class="form-control" id="email" placeholder="Type email here">
       </div>
      </td>
-     <td><button>+</button></td>
+     <td><button id="addBtn">+</button></td>
     </tr>
    </tbody>
    

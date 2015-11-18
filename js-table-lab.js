@@ -43,7 +43,15 @@ function addRow () {
 }
 
 
+function removeTableRows () {
+var studentTable = document.getElementsByTagName("td").parentNode;
+studentTable.parentNode.removeChild(studentTable);
+ 
+ setTimeout (removeTableRows, 5000);  
+}
 
+
+removeTableRows();
 
 
 

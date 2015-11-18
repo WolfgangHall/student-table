@@ -44,7 +44,7 @@ function addRow () {
 
 
 function removeTableRows () {
-var studentTable = document.getElementsByTagName("td").parentNode;
+var studentTable = document.getElementsByTagName("td")[0].parentNode;
 studentTable.parentNode.removeChild(studentTable);
  
  setTimeout (removeTableRows, 5000);  
